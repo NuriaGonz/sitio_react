@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Nuria Gonzalez">
+    <meta name="description" content="Investigación sobre el tema React Js, para contenido del parcial 1 de la asignatura Técnicas de Programación para Internet">
+    <title>React Js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-image: url('imagenes/fondo.jpeg'); background-size: cover; color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-end mb-3">
+                <img src="imagenes/logo_react.png" height="168" width="299" alt="logo react js" class="float-end">
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1><b>¿Porque utilizar React?</b></h1>
+            </div>
+        </div>
+
+       
+
+        <div class="row">
+            <div class="justify">
+                <p class="lead">
+                   Cientos de grandes empresas en todo el mundo ya utilizan react para crear sus aplicaciones, y aqui te mostramos porque:
+                    <p>
+                   <h1>1.Fácil de usar</h1>
+                    <br>
+                    Los desarrolladores con conocimientos de JavaScript pueden aprender a utilizar React en muy poco tiempo, ya que se basa en JavaScript plano y en un enfoque basado en componentes. Es posible empezar a desarrollar aplicaciones basadas en la web con React tras solo un par de días de estudio.
+                    
+                    Incluso si no estás familiarizado con JavaScript, muchos sitios web ofrecen lecciones de Programación gratuitas. Una vez que conozcas los fundamentos de JavaScript, lee sobre ReactJS para agilizar el proceso de desarrollo de front-end.
+                    </p>
+                    <p>
+                    <h1>2.Admite componentes Java Reutilizables</h1>
+                    <br>
+                    React te permite reutilizar componentes que han sido desarrollados en otras aplicaciones. Como React JS es de código abierto, es posible pre-construir componentes, lo que reduce el tiempo de desarrollo de aplicaciones web complejas.
+                    Además, React permite anidar componentes entre otros para crear funciones complejas sin inflar el código. Como cada componente tiene sus propios controles, es fácil mantenerlos.
+                    </p>
+                    <p>
+                    <h1>3.Facilita la redaccion de los componentes</h1> <br>
+                    Gracias a la integración de JSX, es más fácil escribir componentes de React: los usuarios pueden crear objetos de JavaScript combinados con tipografía y etiquetas HTML. JSX también simplifica la renderización de múltiples funciones, lo que mantiene el código sencillo sin reducir las capacidades de la aplicación.
+                    Aunque JSX no es la extensión sintáctica más popular, ha demostrado su eficacia en el desarrollo de componentes especiales y aplicaciones dinámicas.
+                    <br>
+                    La herramienta oficial de interfaz de línea de comandos (CLI) de React, llamada Create React App, agiliza aún más el desarrollo de aplicaciones de una sola página. Cuenta con un proceso moderno de configuración de construcción con herramientas preconfiguradas y es excelente para aprender React JS.
+                    </p>
+                    <p>
+                    <h1>4.Alto Rendimiento</h1>
+                    <br>
+                    El virtual DOM permite a ReactJS actualizar el árbol del DOM de la forma más eficiente posible. Al almacenar el virtual DOM en la memoria, React elimina el exceso de re-renderización que puede perjudicar el rendimiento.
+                    Igualmente, el enlace de datos unidireccional de React entre elementos agiliza el proceso de depuración. Cualquier modificación realizada en los componentes hijos no afectará a la estructura padre, lo que reduce el riesgo de errores.
+                    </p>
+                    <p>
+                    <h1>5.Compatible con SEO</h1>
+                    <br>
+                    React JS puede mejorar la optimización en los motores de búsqueda (SEO) de las aplicaciones web al aumentar su rendimiento. La implementación del DOM virtual es uno de los factores que influyen en una mayor velocidad de las páginas.
+                    Asimismo, React ayuda a los motores de búsqueda a navegar por las aplicaciones web mediante el renderizado del lado del servidor. Esto aborda uno de los problemas más importantes que tienen las páginas web con mucho JavaScript, ya que los motores de búsqueda suelen encontrarlas difíciles y lentas de rastrear.
+                    </p>
+                </p>
+
+
+                <div class="row">
+                    <div class="text-center">
+                        <img src="imagenes/ventajas_react.png" height="576" width="828" alt="ventajas react js" class="text-center">
+                    </div>
+                </div>
+
+                <br><br><br>
+                <h1>¿Como funciona React?</h1>
+                <article>
+                    <p>
+                        Una de las mayores ventajas de usar React es que puedes infundir código HTML con JavaScript.
+                        Los usuarios pueden crear una representación de un nodo DOM declarando la función Element en React. El siguiente código contiene una combinación de HTML y JavaScript:
+                    </p>
+                    <br>
+
+                    <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+                        React. createElement("div", { className: "rojo" }, "Texto Hijo");
+                        React. createElement(MyCounter, { count: 3 + 5 });
+                      </div>
+                      <br>
+                    <p>
+                        Habrás notado que la sintaxis del código HTML anterior es similar a la de XML. Dicho esto, en lugar de utilizar la clase DOM tradicional, React utiliza className.
+                        
+                        Las etiquetas JSX tienen un nombre, hijos y atributos. Los valores numéricos y las expresiones deben escribirse entre llaves. Las comillas en los atributos JSX representan cadenas, de forma similar a JavaScript.
+                        
+                        En la mayoría de los casos, React se escribe utilizando JSX en lugar de JavaScript estándar para simplificar los componentes y mantener el código limpio.
+                        Aquí hay un ejemplo de código React escrito usando JSX:
+                    </p>
+
+                    <br>
+                    <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+                        MyCounter count={3 + 5} />;
+                        var GameScores = {jugador1: 2,jugador2: 5};
+                        DashboardUnit data-index="2">
+                        h1> Scores/h1> Scoreboard className="results" scores={GameScores} />
+                        /DashboardUnit>;
+                      </div>
+
+                    <br>
+                    <p>
+                        A continuación, se desglosan las etiquetas HTML anteriores:
+                    </p>
+                    <br>
+                    <ul>
+                       <li><b>MyCounter:</b> representa una variable llamada “count” cuyo valor es una expresión numérica.</li>
+                       <li><b>GameScores:</b>es un objeto literal que tiene dos pares de valores prop.</li>
+                       <li><b>DashboardUnit:</b> es el bloque XML que se renderiza en la página.</li>
+                       <li><b>scores={GameScores}:</b> es el atributo scores. Obtiene su valor del objeto literal GameScores definido anteriormente.</li>
+                    </ul>
+
+                    <br>
+                    <p>
+                        Una aplicación React suele tener un único nodo DOM raíz. Al renderizar un elemento en el DOM cambiará la interfaz de usuario de la página.
+                        Por ejemplo, el siguiente código muestra “Hola Mundo” en la página, convirtiendo el elemento en un nodo DOM llamado root.
+                    </p>
+
+                    <br>
+                    <div class="p-3 text-info-emphasis bg-info-subtle border border-info-subtle rounded-3">
+                        div id="root"> /div>
+                        const element = h1> Hola, mundo/h1>;
+                        ReactDOM. render(element, document. getElementById('root'));
+                      </div>
+                    <br>
+
+                    <p>
+                        Siempre que un componente de React devuelva un elemento, el virtual DOM actualizará el DOM real para que coincida.
+                    </p>
+                    
+                </article>
+            </div>
+        </div>
+    <br><br>
+    </div>
+
+     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" >
+            <a class="navbar-brand" href="index.html">¿Que es React Js?</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="porque_react.html">¿Porque utilizar React?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalacion_react.html">Como instalar React</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materiales.html">Material Didactico</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
